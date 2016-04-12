@@ -11,6 +11,3 @@ eureka:
     ip-address: ${external.ip:${spring.cloud.client.ipAddress:dockerhost}}
     metadataMap:
       instanceId: ${spring.application.instance_id:${random.value}}
-
-logging:
-  file: ${spring.application.name}.log
